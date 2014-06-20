@@ -1,0 +1,42 @@
+
+<div class="database">
+  <div class="col-sm-10">
+    <h3 class="section-title">Browse the Database</h3>
+  </div>
+  <div class="col-sm-12">
+    <hr>
+
+<span class="pull-right">There are {{boxes.length}} items in the database.</span>
+<button class="page btn btn-default" ng-repeat="i in getNumberAsArray(numberOfPages()) track by $index" ng-click="setCurrentPage($index)">{{$index + 1}}</button>
+  </div>
+
+    <li class="boxes repeat-item" ng-repeat="box in boxes | filter:query | filter:filterCriteria | orderBy:orderProp | startFrom: currentPage * pageSize  | limitTo:pageSize | filter:filterExpr">
+      <div class="col-xs-12 col-sm-6 col-md-4 work">
+        <a data-toggle="modal" data-target="#myModal{{box.id}}">
+          <img src="{{box.imageUrl}}"></a>
+          <h4>{{box.name}}
+            <p class="pull-right">{{box.completion}}</p>
+          </h4>
+      </div>
+
+      <div class="modal fade" id="myModal{{box.id}}" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times fa-lg"></i></a>
+            <h4 class="modal-title text-center">{{box.name}}</h4>
+          </div>
+          <div class="modal-body text-center">
+            <img src="{{box.imageUrl}}"><br>
+          </div>
+            <div class="details">
+            Height: {{box.height}}<br>
+            Type: {{box.type}} {{box.units}}<br>
+            Opening: {{box.completion}}<br>
+            {{box.snippet}}
+          </div>
+        </div>
+      </div>
+      </div>
+    </li>
+</div>

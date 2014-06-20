@@ -1,0 +1,31 @@
+  <div class="text-center"><h1>sf<span>DB</span></h1></div>
+  <div class="list-group">
+    <a class="list-group-item" ui-sref="introduction">Introduction</a>
+    <a class="list-group-item" ui-sref="database">The Database</a>
+    <a class="list-group-item" ui-sref="contact">Contact sfDB</a>
+  </div>
+<div class="clear"></div>
+  <hr />
+    <div class="filters">
+      <span>Name</span><br> <input ng-model="$parent.query"><br>
+      <span>Sort</span><br>
+      <select ng-model="$parent.orderProp">
+        <option value="completion">Age</option>
+        <option value="height">Height</option>
+        <option value="name">Name</option>
+        <option value="type">Type</option>
+
+      </select>
+    </div>
+    <hr />
+      <span class="click">Filter List <icon class="fa fa-long-arrow-right fa-lg"></i></span>
+      <div class="list-group">
+        <a type="btn" class="list-group-item" ng-click='$parent.filterCriteria={}' ui-sref="database"><i class="fa fa-database fa-lg"></i>All</a>
+        <a type="btn" class="list-group-item" ng-click='$parent.filterCriteria.type="residential"' ui-sref="database"><i class="fa fa-home fa-lg"></i>Residential</a>
+        <a type="btn" class="list-group-item "ng-click='$parent.filterCriteria.type="office"' ui-sref="database"><i class="fa fa-building fa-lg"></i>Office</a>
+        <a type="btn" class="list-group-item " ng-click='$parent.filterCriteria.type="infrastructure"' ui-sref="database"><i class="fa fa-truck fa-lg"></i>Infrastructure</a>
+        <a type="btn" class="list-group-item " ng-click='$parent.filterCriteria.type="attraction"' ui-sref="database"><i class="fa fa-university fa-lg"></i>Attraction</a>
+      </div>
+
+<div class="clear"></div>
+<div class="text-center footer"><kbd>James Greve 2014</kbd></div>

@@ -1,0 +1,317 @@
+[
+  {
+    "id": "salesforce",
+    "name": "Salesforce Tower",
+    "height": "1070FT / 326M",
+    "type": "office",
+    "completion": "2017",
+    "snippet": "The new tallest building in San Francisco. Construction began in 2014. The architect is Cesar Pelli. Developed by Hines.",
+    "imageUrl": "img/salesforce-1.jpg"
+  },
+  {
+    "id": "transbayterminal",
+    "name": "Transbay Transit Center",
+    "height": "100FT / 30M",
+    "type": "infrastructure",
+    "completion": "2017",
+    "snippet": "The Grand Central Station of the West. Bus terminal, park, retail, and future Caltrain tracks and California High Speed Rail.",
+    "imageUrl": "img/transbayterminal-1.jpg"
+  },
+  {
+    "id": "45lansing",
+    "name": "45 Lansing",
+    "height": "430FT / 130M",
+    "type": "residential",
+    "completion": "2017",
+    "units": "| 320 Units",
+    "snippet": "New Rincon Hill residential by Crescent Heights and architects HKS.",
+    "imageUrl": "img/45lansing-1.jpg"
+  },
+  {
+    "id": "333fremont",
+    "name": "333 Fremont",
+    "height": "430FT / 130M",
+    "type": "office",
+    "completion": "2017",
+    "snippet": "New Rincon Hill residential by Crescent Heights and architects HKS.",
+    "imageUrl": "img/333fremont-1.jpg"
+  },
+  {
+    "id": "nema",
+    "name": "NEMA",
+    "height": "352FT / 107M",
+    "type": "residential",
+    "completion": "2014",
+    "units": "| 754 Units",
+    "snippet": "One of the early to finish residential buildings in the newly revitalized Mid-Market neighborhood.",
+    "imageUrl": "img/nema-1.jpg"
+  },
+  {
+    "id": "goodwill",
+    "name": "Future Goodwill Tower",
+    "height": "320FT / 98M",
+    "type": "residential",
+    "completion": "2017~",
+    "units": "| ~600 Units",
+    "snippet": "Goodwill on Van Ness and Mission St has been sold. Renders and more details to come. Height and completion are placeholders.",
+    "imageUrl": "img/goodwill-1.jpg"
+  },
+  {
+    "id": "500folsom",
+    "name": "500 Folsom",
+    "height": "400FT / 122M",
+    "type": "residential",
+    "completion": "2017",
+    "units": "| 563 Units",
+    "snippet": "Reshaping Folsom street from light industry into a pedestrian corridor.",
+    "imageUrl": "img/500folsom-1.jpg"
+  },
+  {
+    "id": "1400mission",
+    "name": "1400 Mission",
+    "height": "430FT / 130M",
+    "type": "residential",
+    "completion": "2015",
+    "units": "100 Units",
+    "snippet": "New Rincon Hill residential by Crescent Heights and architects HKS.",
+    "imageUrl": "img/1400mission-1.jpg"
+  },
+  {
+    "id": "centralsubway",
+    "name": "Central Subway",
+    "height": "430FT / 130M",
+    "type": "infrastructure",
+    "completion": "2019",
+    "snippet": "Four new subway stops running North to South connecting Chinatown, Union Square, SoMa, and the Caltrain station.",
+    "imageUrl": "img/centralsubway-1.jpg"
+  },
+  {
+    "id": "1415mission",
+    "name": "1415 Mission",
+    "height": "430FT / 130M",
+    "type": "residential",
+    "completion": "2015",
+    "units": "320 Units",
+    "snippet": "New Rincon Hill residential by Crescent Heights and architects HKS.",
+    "imageUrl": "img/1415mission-1.jpg"
+  },
+  {
+    "id": "555california",
+    "name": "555 California",
+    "height": "779FT / 237M",
+    "type": "office",
+    "completion": "1969",
+    "snippet": "The second tallest building in San Francisco.",
+    "imageUrl": "img/555california-1.jpg"
+  },
+  {
+    "id": "101polk",
+    "name": "101 Polk",
+    "height": "430FT / 130M",
+    "type": "residential",
+    "completion": "2016",
+    "units": "| 162 Units",
+    "snippet": "New Rincon Hill residential by Crescent Heights and architects HKS.",
+    "imageUrl": "img/101polk-1.jpg"
+  },
+  {
+    "id": "transamerica",
+    "name": "Transamerica Pyramid",
+    "height": "853FT / 260M",
+    "type": "office",
+    "completion": "1972",
+    "snippet": "San Francisco's long reigning tallest building.",
+    "imageUrl": "img/transamerica-1.jpg"
+  },
+  {
+    "id": "onevanness",
+    "name": "One Van Ness",
+    "height": "400FT / 122M",
+    "type": "residential",
+    "completion": "2017",
+    "units": "| 320 Units",
+    "snippet": "Mid-Market luxury residential building. While still just a proposal, this may succeed in filling in surface parking with much needed new housing.",
+    "imageUrl": "img/onevanness-1.jpg"
+  },
+  {
+    "id": "100vanness",
+    "name": "100 Van Ness",
+    "height": "400FT / 122M",
+    "type": "residential",
+    "completion": "2014",
+    "units": "| 400 Units",
+    "snippet": "A renovation of the old AAA building. The entire concrete facade was removed and replaced with clear glass.",
+    "imageUrl": "img/100vanness-1.jpg"
+  },
+  {
+    "id": "onyx",
+    "name": "Onyx",
+    "height": "150FT / 46M",
+    "type": "residential",
+    "completion": "2014",
+    "units": "| 20 Units",
+    "snippet": "Residential in the Mission.",
+    "imageUrl": "img/onyx-1.jpg"
+  },
+  {
+    "id": "ava",
+    "name": "AVA",
+    "height": "198FT / 60M",
+    "type": "residential",
+    "completion": "2014",
+    "units": "| 273 Units",
+    "snippet": "Avalon Bay developed this apartment building at 9th and Mission. Targeted at a young tech crowd.",
+    "imageUrl": "img/ava-1.jpg"
+  },
+  {
+    "id": "535mission",
+    "name": "535 Mission",
+    "height": "378FT / 115M",
+    "type": "office",
+    "completion": "2014",
+    "snippet": "New luxury office space going up fast on Mission st near the Transbay Terminal.",
+    "imageUrl": "img/535mission-1.jpg"
+  },
+  {
+    "id": "222second",
+    "name": "222 Second",
+    "height": "370FT / 113M",
+    "type": "office",
+    "completion": "2015",
+    "snippet": "LinkedIn bought this building in early 2014. Expect first occupancy to come in late 2015 or early 2016.",
+    "imageUrl": "img/222second-1.jpg"
+  },
+  {
+    "id": "8octavia",
+    "name": "8 Octavia",
+    "height": "150FT / 46M",
+    "type": "residential",
+    "completion": "2014",
+    "units": "| 47 Units",
+    "snippet": "A gorgeous Saitowitz design which unveils itself coming off of the 101 highway exit onto Octavia.",
+    "imageUrl": "img/8octavia-1.jpg"
+  },
+  {
+    "id": "sfmoma",
+    "name": "SF Museum of Modern Art",
+    "height": "100FT / 30M",
+    "type": "attraction",
+    "completion": "2016",
+    "snippet": "A modern art museum for the modern age. Eight floors of contemporary art will be displayed. The architect is the Norwegian firm Snøhetta.",
+    "imageUrl": "img/sfmoma-1.jpg"
+  },
+  {
+    "id": "trinity",
+    "name": "Trinity Place III",
+    "height": "200FT / 60M",
+    "type": "residential",
+    "completion": "2016",
+    "units": "| ~600 in PIII, ~1500 Total Units",
+    "snippet": "The third of four phases of the massive Trinity Place development at 8th and Market. This will contribute greatly to the remaking of Mid-Market.",
+    "imageUrl": "img/trinity-1.jpg"
+  },
+  {
+    "id": "linea",
+    "name": "Linea",
+    "height": "200FT / 61M",
+    "type": "residential",
+    "completion": "2015",
+    "units": "| 115 Units",
+    "snippet": "The new tallest building in San Francisco. Construction began in 2014.",
+    "imageUrl": "img/linea-1.jpg"
+  },
+  {
+    "id": "mosso",
+    "name": "Mosso SF",
+    "height": "100FT / 30M",
+    "type": "residential",
+    "completion": "2014",
+    "units": "| 463 Units",
+    "snippet": "Two separate rental buildings united by shared amenities and concierges.",
+    "imageUrl": "img/mosso-1.jpg"
+  },
+  {
+    "id": "2001market",
+    "name": "2001 Market/38 Dolores",
+    "height": "100FT / 30M",
+    "type": "residential",
+    "completion": "2013",
+    "units": "| 81 Units",
+    "snippet": "Dozens of new apartments with a Whole Foods at the base.",
+    "imageUrl": "img/2001market-1.jpg"
+  },
+  {
+    "id": "350mission",
+    "name": "350 Mission",
+    "height": "455FT / 139M",
+    "type": "office",
+    "completion": "2015",
+    "snippet": "Salesforce purchased this tower, which is across from their future headquarters at the Salesforce Tower. Expect a speedy finish.",
+    "imageUrl": "img/350mission-1.jpg"
+  },
+  {
+    "id": "hamptoninn",
+    "name": "Hampton Inn",
+    "height": "200FT / 61M",
+    "type": "residential",
+    "completion": "2014",
+    "snippet": "Sorely needed budget/family hotel space near the Moscone Conference Center.",
+    "imageUrl": "img/hamptoninn-1.jpg"
+  },
+  {
+    "id": "moscone",
+    "name": "Moscone Center Expansion",
+    "height": "95FT / 29M",
+    "type": "infrastructure",
+    "completion": "2017",
+    "snippet": "More square footage for San Francisco's most important conference space. Decisions on final plans have yet to be made, massive changes are very possible.",
+    "imageUrl": "img/moscone-1.jpg"
+  },
+  {
+    "id": "rincontower2",
+    "name": "One Rincon Tower 2",
+    "height": "1050FT / 300M",
+    "type": "residential",
+    "completion": "2014",
+    "snippet": "The new tallest building in San Francisco. Construction began in 2014.",
+    "imageUrl": "img/rincontower2-1.jpg"
+  },
+  {
+    "id": "marketstplace",
+    "name": "Market Street Place",
+    "height": "100FT / 30M",
+    "type": "attraction",
+    "completion": "2017",
+    "snippet": "An upscale shopping complex that will expand San Francisco's commercial district up Market street by a city block.",
+    "imageUrl": "img/marketstplace-1.jpg"
+  },
+  {
+    "id": "950market",
+    "name": "950 Market",
+    "height": "200FT / 61M",
+    "type": "residential",
+    "completion": "2017",
+    "units": "316",
+    "snippet": "A massive new project by European starchitects BIG. Residential, art space, and hotel in one.",
+    "imageUrl": "img/950market-1.jpg"
+  },
+  {
+    "id": "lumina",
+    "name": "Lumina",
+    "height": "400FT / 120M",
+    "type": "residential",
+    "completion": "2015",
+    "units": "655",
+    "snippet": "New luxury residential units coming to SoMa.",
+    "imageUrl": "img/lumina-1.jpg"
+  },
+  {
+    "id": "181fremont",
+    "name": "181 Fremont",
+    "height": "850FT / 250M",
+    "type": "office",
+    "completion": "2017",
+    "snippet": "Residential at the top, office for the bottom, with a base of retail. Soon to be the second tallest in San Francisco.",
+    "imageUrl": "img/181fremont-1.jpg"
+  }
+]
