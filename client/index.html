@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>sanfranciscoDB: A Database of new construction in San Francisco</title>
+
+<!-- CSS -->
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/dist/styles/input.min.css">
+</head>
+
+<!--Body-->
+
+<body ng-app="sfApp">
+
+<section id="nav">
+<div class="sort" >
+  <div class="navigation">
+  <a href class="btn" ng-click="visible = !visible"><i class="fa fa-bars"></i></a>
+
+  <a class="btn" href="#/">Home</a>
+  <a class="btn disabled">Blog</a>
+</div>
+<div class="title"><h1>sanfrancisco<span>DB</span></h1>
+</div>
+</div>
+</section>
+<div class="clear"></div>
+<section id="menu" ng-show="visible">
+<div ng-controller="dbCtrl">
+
+<span class="filters">Filters</span>
+<a class="btn" ng-disabled="currentPage<1" ng-click="currentPage=currentPage-1"><i class="fa fa-angle-double-left fa-lg"></i></a>Page {{currentPage+1}}/{{numberOfPages()}}
+<a class="btn" ng-disabled="currentPage >= boxes.length/pageSize-1;" ng-click="currentPage=currentPage+1"><i class="fa fa-angle-double-right fa-lg"></i></a><br>
+  <ul>
+      <li><a class="btn" ng-click='filterCriteria={}; currentPage=reset()'><i class="fa fa-times fa-lg"></i></a></button></li>
+      <li><a class="btn" ng-click='filterCriteria.type="residential"; currentPage=reset()'><i class="fa fa-home fa-lg"></i></a></button></li>
+      <li><a class="btn" ng-click='filterCriteria.type="office"; currentPage=reset()'><i class="fa fa-building fa-lg"></i></a></button></li>
+      <li><a class="btn" ng-click='filterCriteria.type="infrastructure"; currentPage=reset()' ui-sref="database"><i class="fa fa-truck fa-lg"></i></a></button></li>
+      <li><a class="btn" ng-click='filterCriteria.type="attraction"; currentPage=reset()'><i class="fa fa-institution fa-lg"></i></a></button></li>
+  </ul>
+
+    <li class="boxes repeat-item animate" ng-repeat="box in boxes | filter:filterCriteria | orderBy:orderProp | startFrom:currentPage*pageSize | limitTo: pageSize " ng-click="select(box)" ng-class="{active: isActive(box)}">
+      <a href="#/{{box.id}}">
+        <div class="work">
+          <img class="pull-left" src="{{box.imageUrl}}">
+          <h4>{{box.name}}
+          </h4>
+      </div></li></a>
+  </div>
+</section>
+<section id="main">
+          <div ng-view ng-controller="dtCtrl">
+          </div>
+</section>
+<footer>
+  <div class="foot">
+  <div class="column">
+    <span>Copyright sfDB 2014</span>
+  </div>
+  <div class="column">
+    <p>All data pulled from Google. Some images may be slightly distorted due to resizing of files. sfDB is only intended to demonstrate my abilities in Web Development and is not an official source of information.</p>
+  </div>
+  <div class="column">
+      <h4 class="text-center">Contact Me</h4>
+      <div class="ficons">
+    <a href="http://www.linkedin.com/in/tylerjamesgreve"><i class="fa fa-linkedin-square fa-2x"></i></a>
+    <a href="https://github.com/fimiak"><i class="fa fa-github fa-2x"></i></a>
+    <a href="https://twitter.com/tjgreve"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="mailto:tylerjamesgreve@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+  </div>
+</div>
+</div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+<script src="bower_components/AngularGM/angular-gm.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.16/angular-resource.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/dist/scripts/main.min.js"></script>
+</body>
+</html>

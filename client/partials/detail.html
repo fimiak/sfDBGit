@@ -1,0 +1,36 @@
+<section class="det container-fluid">
+
+<div class="col-sm-12">
+<div class="images">
+  <img ng-src="{{mainImageUrl}}" class="boxes" ng-repeat="img in box.images" ng-class="{active: mainImageUrl==img}">
+<ul class="thumbs">
+  <li ng-repeat="img in box.images" class="animate">
+  <img src="{{img}}" ng-click="setImage(img)">
+  </li>
+</ul>
+</div>
+</div>
+<div class="col-sm-12">
+    <table class="table table-condensed">
+      <tr>
+        <div class="text-center bold">{{box.name}}</div>
+      </tr>
+      <tr>
+        <td>{{box.snippet}}</td>
+        <td>Height: {{box.height}}</td>
+      </tr>
+
+    <tr>
+
+    <td>Neighborhood: {{box.neighborhood}}</td>
+    <td>Year of Completion: {{box.completion}}</td>
+  </tr>
+  <tr>
+    <td>Type: {{box.type}} {{box.units}}</td>
+    <td><a class="btn" href="{{box.website}}" target="_blank">Website</a></td>
+  </tr>
+  </table>
+</div>
+</section>
+<div class="clear"></div>
+<button ng-click="clickButton()">Click</button>

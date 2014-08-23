@@ -1,0 +1,49 @@
+<section id="content" class="">
+
+<section class="">
+<h1 class="text-center detail">{{box.name}}</h1>
+<div class="">
+<div class="images">
+  <img ng-src="{{img}}" class="boxes animate" ng-repeat="img in box.images" ng-class="{active: mainImageUrl==img}">
+<ul class="thumbs">
+  <li ng-repeat="img in box.images">
+  <img ng-src="{{img}}" ng-click="setImage(img)">
+  </li>
+</ul>
+</div>
+</div>
+<div class="clear">
+    <table class="table">
+      <tr>
+        <td>Project Type: {{box.type}} {{box.units}}</td>
+        <td>Height: {{box.height}}</td>
+      </tr>
+
+    <tr>
+
+    <td>Neighborhood: {{box.neighborhood}}</td>
+    <td>Year of Completion: {{box.completion}}</td>
+  </tr>
+  <tr>
+    <td>{{box.snippet}}</td>
+    <td>Website: <a class="btn" href="{{box.website}}" target="_blank">{{box.website}}</a></td>
+  </tr>
+  </table>
+</div>
+</section>
+<div class="clear"></div>
+
+<div ng-hide="details" class="showanimation">
+<gm-map class="map" gm-map-id="'mapWithMarkers'" gm-center="center"
+        gm-zoom="zoom" gm-map-options="options.map" class="map">
+
+  <gm-markers gm-objects="volcanoes"
+              gm-id="object.id"
+              gm-position="{lat: object.location.lat, lng: object.location.lng}"
+              gm-marker-options="getVolcanoOpts(object)"
+              gm-on-click="selectVolcano(object, marker)">
+  </gm-markers>
+</gm-map>
+</div>
+</div>
+  </section>

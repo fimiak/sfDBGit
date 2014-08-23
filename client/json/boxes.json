@@ -31,10 +31,38 @@
     "id": "333fremont",
     "name": "333 Fremont",
     "height": "430FT / 130M",
-    "type": "office",
+    "type": "residential",
     "completion": "2017",
+    "units": "83 Units",
     "snippet": "New Rincon Hill residential by Crescent Heights and architects HKS.",
     "imageUrl": "img/333fremont-1.jpg"
+  },
+  {
+    "id": "cruiseterminal",
+    "name": "Herman Cruise Terminal",
+    "height": "100FT / 30M",
+    "type": "attraction",
+    "completion": "2014",
+    "snippet": "A new cruise terminal for San Francisco on Pier 27.",
+    "imageUrl": "img/cruiseterminal-1.jpg"
+  },
+  {
+    "id": "baybridge",
+    "name": "Bay Bridge",
+    "height": "100FT / 30M",
+    "type": "infrastructure",
+    "completion": "2013",
+    "snippet": "After a decade of construction, the new East span of the Bay Bridge is complete.",
+    "imageUrl": "img/baybridge-1.jpg"
+  },
+  {
+    "id": "warriors",
+    "name": "Warriors Arena",
+    "height": "100FT / 30M",
+    "type": "attraction",
+    "completion": "2016",
+    "snippet": "A new basketball arena for the Golden State Warriors.",
+    "imageUrl": "img/warriors-1.jpg"
   },
   {
     "id": "nema",
@@ -48,10 +76,10 @@
   },
   {
     "id": "goodwill",
-    "name": "Future Goodwill Tower",
+    "name": "Goodwill Tower",
     "height": "320FT / 98M",
     "type": "residential",
-    "completion": "2017~",
+    "completion": "2017",
     "units": "| ~600 Units",
     "snippet": "Goodwill on Van Ness and Mission St has been sold. Renders and more details to come. Height and completion are placeholders.",
     "imageUrl": "img/goodwill-1.jpg"
@@ -69,17 +97,17 @@
   {
     "id": "1400mission",
     "name": "1400 Mission",
-    "height": "430FT / 130M",
+    "height": "200FT / 61M",
     "type": "residential",
     "completion": "2015",
-    "units": "100 Units",
+    "units": "190 Units",
     "snippet": "New Rincon Hill residential by Crescent Heights and architects HKS.",
     "imageUrl": "img/1400mission-1.jpg"
   },
   {
     "id": "centralsubway",
     "name": "Central Subway",
-    "height": "430FT / 130M",
+    "height": "50FT / 15M",
     "type": "infrastructure",
     "completion": "2019",
     "snippet": "Four new subway stops running North to South connecting Chinatown, Union Square, SoMa, and the Caltrain station.",
@@ -88,7 +116,7 @@
   {
     "id": "1415mission",
     "name": "1415 Mission",
-    "height": "430FT / 130M",
+    "height": "200FT / 0M",
     "type": "residential",
     "completion": "2015",
     "units": "320 Units",
@@ -226,8 +254,8 @@
     "height": "100FT / 30M",
     "type": "residential",
     "completion": "2014",
-    "units": "| 463 Units",
-    "snippet": "Two separate rental buildings united by shared amenities and concierges.",
+    "units": "463 Units",
+    "snippet": "Two separate rental buildings united by shared amenities and concierge services.",
     "imageUrl": "img/mosso-1.jpg"
   },
   {
@@ -260,7 +288,7 @@
   },
   {
     "id": "moscone",
-    "name": "Moscone Center Expansion",
+    "name": "Moscone Expansion",
     "height": "95FT / 29M",
     "type": "infrastructure",
     "completion": "2017",
@@ -273,7 +301,7 @@
     "height": "1050FT / 300M",
     "type": "residential",
     "completion": "2014",
-    "snippet": "The new tallest building in San Francisco. Construction began in 2014.",
+    "snippet": "",
     "imageUrl": "img/rincontower2-1.jpg"
   },
   {
