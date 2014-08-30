@@ -1,0 +1,15 @@
+{
+    "id": "onevanness",
+    "name": "One Van Ness",
+    "height": "400FT /122M",
+    "type": "Residential",
+    "units": "~200 Units",
+    "completion": "2017",
+    "snippet": "Mid-Market luxury residential building. While still just a proposal, this may succeed in filling in surface parking with much needed new housing.",
+    "website": "N/A",
+    "images": [
+      "img/onevanness-1.jpg",
+      "img/onevanness-2.jpg",
+      "img/onevanness-3.jpg"
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": "moscone",
+    "name": "Moscone Center Expansion",
+    "height": "95FT / 29M",
+    "type": "Infrastructure",
+    "completion": "2017",
+    "snippet": "More square footage for San Francisco's most important conference space. Decisions on final plans have yet to be made, massive changes are very possible.",
+    "website": "http://mosconeexpansion.com/",
+    "images": [
+      "img/moscone-1.jpg",
+      "img/moscone-2.jpg",
+      "img/moscone-3.jpg",
+      "img/moscone-4.jpg"
+    ]
+}

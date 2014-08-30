@@ -1,4 +1,4 @@
-var sfApp = angular.module('sfApp', ['ngRoute', 'ngAnimate', 'sfAppControllers', 'sfAppServices', 'AngularGM']);
+var sfApp = angular.module('sfApp', ['ngRoute', 'ngAnimate', 'sfAppControllers', 'sfAppServices', 'sfAppDirectives', 'AngularGM']);
 
 sfApp.config(['$routeProvider', function($routeProvider) {
 

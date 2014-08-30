@@ -1,0 +1,15 @@
+{
+    "id": "ava",
+    "name": "AVA",
+    "height": "198FT / 60M",
+    "type": "Residential",
+    "units": "273 Units",
+    "completion": "2014",
+    "snippet": "Avalon Bay developed this apartment building at 9th and Mission. Targeted at a young tech crowd.",
+    "website": "http://www.ava55ninth.com/",
+    "images": [
+      "img/ava-1.jpg",
+      "img/ava-2.jpg",
+      "img/ava-3.jpg"
+    ]
+}

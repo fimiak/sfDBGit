@@ -1,4 +1,4 @@
-var sfApp = angular.module('sfApp', ['ngRoute', 'ngAnimate', 'sfAppControllers', 'sfAppServices', 'AngularGM']);
+var sfApp = angular.module('sfApp', ['ngRoute', 'ngAnimate', 'sfAppControllers', 'sfAppServices', 'sfAppDirectives', 'AngularGM']);
 
 sfApp.config(['$routeProvider', function($routeProvider) {
 
@@ -19,7 +19,7 @@ sfApp.config(['$routeProvider', function($routeProvider) {
 
 var dbCtrl = angular.module('sfAppControllers', []);
 
-dbCtrl.controller('dbCtrl', ['$scope', 'Box', function ($scope, Box) {
+dbCtrl.controller('dbCtrl', ['$scope', '$location', 'Box', function ($scope, $location, Box) {
 
   $scope.boxes = Box.query();
   $scope.orderProp = '-height';
@@ -31,12 +31,7 @@ dbCtrl.controller('dbCtrl', ['$scope', 'Box', function ($scope, Box) {
   for (var i=0; i<10; i++) {
     $scope.boxes.push(i);
   }
-  $scope.select=function(item) {
-    $scope.selected = item;
-  };
-  $scope.isActive = function(item) {
-    return $scope.selected === item;
-  };
+  $scope.test = 'one';
 
   $scope.options = {
     map: {
@@ -62,7 +57,6 @@ dbCtrl.controller('dtCtrl', ['$scope', '$routeParams', 'Box', function($scope, $
   $scope.setImage = function(imageUrl) {
     $scope.mainImageUrl = imageUrl;
   };
-
 }]);
 
 
@@ -73,7 +67,37 @@ dbCtrl.filter('startFrom', function() {
   };
 });
 
+var dbDir = angular.module('sfAppDirectives', []);
 
+  dbDir.directive('activeLink', ['$location', function(location) {
+    return {
+      restrict: "A",
+      link: function(scope, element, attrs, controller) {
+        var clazz = attrs.activeLink;
+        var path = attrs.href;
+        path = path.substring(1);
+        scope.location = location;
+        scope.$watch('location.path()', function(newPath) {
+          if (path === newPath) {
+            element.addClass(clazz);
+          } else {
+            element.removeClass(clazz);
+          }
+        });
+      }
+    };
+  }]);
+
+$(document).ready(function(){
+	$('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  slide: '> div',
+  cssEase: 'linear'
+});
+});
 var dbServices = angular.module('sfAppServices', ['ngResource']);
 
 dbServices.factory('Box', ['$resource', function($resource) {

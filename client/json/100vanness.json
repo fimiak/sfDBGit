@@ -1,0 +1,17 @@
+{
+    "id": "100vanness",
+    "name": "100 Van Ness",
+    "height": "400FT /120M",
+    "type": "Residential",
+    "units": "400 Units",
+    "completion": "2014",
+    "snippet": "A renovation of the old AAA building. The entire concrete facade was removed and replaced with clear glass.",
+    "website": "http://sfciviccenter.org/portfolio-view/100-van-ness/",
+    "logitude": "-120",
+    "images": [
+      "img/100vanness-1.jpg",
+      "img/100vanness-2.jpg",
+      "img/100vanness-3.jpg",
+      "img/100vanness-4.jpg"
+    ]
+}

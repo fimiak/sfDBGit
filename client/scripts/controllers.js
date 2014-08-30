@@ -1,6 +1,6 @@
 var dbCtrl = angular.module('sfAppControllers', []);
 
-dbCtrl.controller('dbCtrl', ['$scope', 'Box', function ($scope, Box) {
+dbCtrl.controller('dbCtrl', ['$scope', '$location', 'Box', function ($scope, $location, Box) {
 
   $scope.boxes = Box.query();
   $scope.orderProp = '-height';
@@ -12,12 +12,7 @@ dbCtrl.controller('dbCtrl', ['$scope', 'Box', function ($scope, Box) {
   for (var i=0; i<10; i++) {
     $scope.boxes.push(i);
   }
-  $scope.select=function(item) {
-    $scope.selected = item;
-  };
-  $scope.isActive = function(item) {
-    return $scope.selected === item;
-  };
+  $scope.test = 'one';
 
   $scope.options = {
     map: {
@@ -43,7 +38,6 @@ dbCtrl.controller('dtCtrl', ['$scope', '$routeParams', 'Box', function($scope, $
   $scope.setImage = function(imageUrl) {
     $scope.mainImageUrl = imageUrl;
   };
-
 }]);
 
 

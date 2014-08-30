@@ -1,0 +1,15 @@
+{
+    "id": "linea",
+    "name": "Linea",
+    "height": "200FT / 60M",
+    "type": "Residential",
+    "units": "115 Units",
+    "completion": "2015",
+    "snippet": "Luxury condominiums in a prime location on Market street. Close to the Castro and both Whole Foods and Safeway.",
+    "website": "http://lineasf.com/",
+    "images": [
+      "img/linea-1.jpg",
+      "img/linea-2.jpg",
+      "img/linea-3.jpg"
+    ]
+}

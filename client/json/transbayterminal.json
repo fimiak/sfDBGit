@@ -1,0 +1,15 @@
+{
+    "id": "transbayterminal",
+    "name": "Transbay Transit Center",
+    "height": "100FT / 30M",
+    "type": "Infrastructure",
+    "completion": "2017",
+    "snippet": "The Grand Central Station of the West. Bus terminal, park, retail, and future Caltrain tracks and California High Speed Rail.",
+    "website": "http://transbaycenter.org/",
+    "images": [
+      "img/transbayterminal-1.jpg",
+      "img/transbayterminal-2.jpg",
+      "img/transbayterminal-3.jpg",
+      "img/transbayterminal-4.jpg"
+    ]
+}

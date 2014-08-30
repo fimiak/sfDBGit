@@ -1,0 +1,16 @@
+{
+    "id": "mosso",
+    "name": "Mosso SF",
+    "height": "100FT /30M",
+    "type": "Residential",
+    "units": "463 Units",
+    "completion": "2014",
+    "snippet": "Two separate rental buildings united by shared amenities and concierge services.",
+    "website": "http://www.mossosf.com/",
+    "images": [
+      "img/mosso-1.jpg",
+      "img/mosso-2.jpg",
+      "img/mosso-3.jpg",
+      "img/mosso-4.jpg"
+    ]
+}

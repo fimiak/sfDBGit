@@ -1,0 +1,14 @@
+{
+    "id": "500folsom",
+    "name": "500 Folsom",
+    "height": "400FT / 122M",
+    "type": "Residential",
+    "units": "563 Units",
+    "completion": "2017",
+    "snippet": "Reshaping Folsom street from light industry into a pedestrian corridor.",
+    "website": "N/A",
+    "images": [
+      "img/500folsom-1.jpg",
+      "img/500folsom-2.jpg"
+    ]
+}

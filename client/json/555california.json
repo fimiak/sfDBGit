@@ -1,0 +1,14 @@
+{
+    "id": "555california",
+    "name": "555 California",
+    "height": "779FT / 237M",
+    "type": "Office",
+    "completion": "1969",
+    "snippet": "The second tallest building in San Francisco, at present.",
+    "website": "http://www.555cal.com/",
+    "images": [
+      "img/555california-1.jpg",
+      "img/555california-2.jpg",
+      "img/555california-3.jpg"
+    ]
+}

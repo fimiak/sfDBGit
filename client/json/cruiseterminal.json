@@ -1,0 +1,13 @@
+{
+    "id": "cruiseterminal",
+    "name": "James R Herman Cruise Terminal",
+    "height": "100FT / 30M",
+    "type": "Attraction",
+    "completion": "2014",
+    "snippet": "A new cruise terminal for San Francisco on Pier 27.",
+    "website": "N/A",
+    "images": [
+      "img/cruiseterminal-1.jpg",
+      "img/cruiseterminal-2.jpg"
+    ]
+}

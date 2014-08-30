@@ -1,0 +1,92 @@
+<div class="sort col-md-12">
+<div class="text-center col-md-6">
+{{currentPage+1}}/{{numberOfPages()}}
+<a class="btn" ng-disabled="currentPage<1" ng-click="currentPage=currentPage-1"><i class="fa fa-angle-double-left fa-lg"></i></a>
+<a class="btn" ng-disabled="currentPage >= boxes.length/pageSize-1;" ng-click="currentPage=currentPage+1"><i class="fa fa-angle-double-right fa-lg"></i></a>
+
+<ul>
+    <li><a class="btn" ng-click='filterCriteria={}; currentPage=reset()' ui-sref="database">All</a></button></li>
+    <li><a class="btn" ng-click='filterCriteria.type="residential"; currentPage=reset()' ui-sref="database">Residential</a></button></li>
+    <li><a class="btn" ng-click='filterCriteria.type="office"; currentPage=reset()'  ui-sref="database">Office</a></button></li>
+    <li><a class="btn" ng-click='filterCriteria.type="infrastructure"; currentPage=reset()' ui-sref="database">Infrastructure</a></button></li>
+    <li><a class="btn" ng-click='filterCriteria.type="attraction"; currentPage=reset()' ui-sref="database">Attraction</a></button></li>
+  </ul>
+</div>
+</div>
+<div class="clear"></div>
+
+
+
+<div class="container projects col-md-6 col-sm-12">
+  <a ng-click="gmaps=true">
+    <li class="boxes repeat-item animate" ng-repeat="box in boxes | filter:filterCriteria | orderBy:orderProp | startFrom:currentPage*pageSize | limitTo: pageSize " ng-click="select(box)" ng-class="{active: isActive(box)}">
+
+      <div class="col-xs-12 col-sm-12 col-md-6 work">
+          <img class="pull-left" src="{{box.imageUrl}}">
+          <h4>{{box.name}}
+            <p>Height: {{box.height}}<br>
+            Year of Completion: {{box.completion}}</p>
+          </h4>
+      </div></li></a>
+  </div>
+
+  <div class="col-xs-12 col-md-6 pull-right">
+
+      <div ng-show="gmaps">
+
+      <div class="back container">
+        <a class="btn" ng-click="gmaps = false"><i class="fa fa-angle-double-left"></i>Back to Map</a>
+      </div>
+
+  <section ng-controller="dtCtrl">
+    <div class="container">
+        <div class="col-sm-4 col-sm-offset-1">
+          <div class="panel panel-default">
+            <table class="table table-striped">
+              <tr>
+                <td>{{boxes.name}}</td>
+              </tr>
+              <tr>
+                <td>Height: {{box.height}}</td>
+              </tr>
+            <tr>
+              <td>Type: {{box.type}} {{box.units}}</td>
+            </tr>
+            <tr>
+            <td>Year of Completion: {{box.completion}}</td>
+          </tr>
+          <tr><td>{{box.snippet}}</td></tr>
+          <tr><td>Website: <a href="{{box.website}}" target="_blank">{{box.website}}</a></td></tr>
+          </table>
+          </div>
+        </div>
+        <div class="col-sm-6">
+        <div class="images">
+          <img ng-src="{{mainImageUrl}}" class="boxes" ng-repeat="img in box.images" ng-class="{active: mainImageUrl==img}">
+        </div>
+        <div>
+        <ul class="thumbs">
+          <li ng-repeat="img in box.images" class="animate">
+          <img src="{{img}}" ng-click="setImage(img)">
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div ng-hide="gmaps">
+<gm-map class="map" gm-map-id="'mapWithMarkers'" gm-center="center"
+        gm-zoom="zoom" gm-map-options="options.map" class="map">
+
+  <gm-markers gm-objects="volcanoes"
+              gm-id="object.id"
+              gm-position="{lat: object.location.lat, lng: object.location.lng}"
+              gm-marker-options="getVolcanoOpts(object)"
+              gm-on-click="selectVolcano(object, marker)">
+  </gm-markers>
+</gm-map>
+</div>
+</div>
+  </div>

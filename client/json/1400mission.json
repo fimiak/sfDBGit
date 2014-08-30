@@ -1,0 +1,15 @@
+{
+    "id": "1400mission",
+    "name": "1400 Mission",
+    "height": "200FT /61M",
+    "type": "Residential",
+    "units": "190 Units",
+    "completion": "2015",
+    "snippet": "New 15 floor complex intended to fulfill the BMR requirement of Lumina.",
+    "website": "http://www.tndc.org/indevelopment/1400-mission-street/",
+    "images": [
+      "img/1400mission-1.jpg",
+      "img/1400mission-2.jpg",
+      "img/1400mission-3.jpg"
+    ]
+}

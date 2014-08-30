@@ -1,0 +1,15 @@
+{
+    "id": "sfmoma",
+    "name": "San Francisco Museum of Modern Art",
+    "height": "10FT / 3M",
+    "type": "Attraction",
+    "completion": "2016",
+    "snippet": "A modern art museum for the modern age. Eight floors of contemporary art will be displayed. The architect is the Norwegian firm Snøhetta.",
+    "website": "http://www.sfmoma.org/",
+    "images": [
+      "img/sfmoma-1.jpg",
+      "img/sfmoma-2.jpg",
+      "img/sfmoma-3.jpg",
+      "img/sfmoma-4.jpg"
+    ]
+}

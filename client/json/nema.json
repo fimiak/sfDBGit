@@ -1,0 +1,16 @@
+{
+    "id": "nema",
+    "name": "NeMa",
+    "height": "352FT /107M",
+    "type": "Residential",
+    "units": "754 Units",
+    "completion": "2014",
+    "snippet": "One of the early to finish residential buildings in the newly revitalized Mid-Market neighborhood.",
+    "website": "http://www.rentnema.com/",
+    "images": [
+      "img/nema-1.jpg",
+      "img/nema-2.jpg",
+      "img/nema-3.jpg",
+      "img/nema-4.jpg"
+    ]
+}

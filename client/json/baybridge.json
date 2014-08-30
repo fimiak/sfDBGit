@@ -1,0 +1,15 @@
+{
+    "id": "baybridge",
+    "name": "Bay Bridge",
+    "height": "100FT / 30M",
+    "type": "Office",
+    "completion": "2013",
+    "snippet": "After a decade of construction, the new East span of the Bay Bridge is complete.",
+    "website": "http://baybridgeinfo.org/",
+    "images": [
+      "img/baybridge-1.jpg",
+      "img/baybridge-2.jpg",
+      "img/baybridge-3.jpg",
+      "img/baybridge-4.jpg"
+    ]
+}

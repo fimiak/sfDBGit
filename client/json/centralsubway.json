@@ -1,0 +1,15 @@
+{
+    "id": "centralsubway",
+    "name": "Central Subway",
+    "height": "50FT / 15M",
+    "type": "Infrastructure",
+    "completion": "2019",
+    "snippet": "Four new subway stops running North to South connecting Chinatown, Union Square, SoMa, and the Caltrain station.",
+    "website": "http://www.centralsubwaysf.com/",
+    "images": [
+      "img/centralsubway-1.jpg",
+      "img/centralsubway-2.jpg",
+      "img/centralsubway-3.jpg",
+      "img/centralsubway-4.jpg"
+    ]
+}
